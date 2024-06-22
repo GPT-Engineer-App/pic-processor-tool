@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Edit</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Upload and Edit</h1>
+        <input type="file" id="fileInput">
+        <button onclick="uploadImage()">Upload</button>
+        <div id="actions" style="display: none;">
+            <button onclick="editImage('crop')">Crop</button>
+            <button onclick="editImage('resize')">Resize</button>
+            <button onclick="editImage('filter')">Apply Filter</button>
+        </div>
+        <div id="download" style="display: none;">
+            <button onclick="downloadImage()">Download</button>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
